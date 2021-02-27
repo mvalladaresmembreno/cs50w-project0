@@ -14,10 +14,22 @@
   overflow: hidden;
   padding: 20px;*/
 /*# sourceMappingURL=style.css.map */
+$strongpink: #CE1A70
+$white: #FFFFFF
+$pink: #FF3F9B
+$lightpink: #FFB6C1
+$lowpink: #F8BBD0
+$darkpink: #8F094A
+$medium_magenta: #C2185B
+
+
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
+%linea{
+	text-decoration: none;
+}	
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
@@ -25,15 +37,15 @@ body {
 .header {
 	padding: 100px;
 	text-align: center;
-	background: #CE1A70;
-	color: #FFFFFF;
+	background: $strongpink;
+	color: $white;
 	h1 {
 		font-size: 40px;
 	}
 }
 .navbar {
 	overflow: hidden;
-	background-color: #FF3F9B;
+	background-color: $pink;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
@@ -45,12 +57,12 @@ body {
 		padding: 14px 20px;
 		text-decoration: none;
 		&:hover {
-			background-color: #FFB6C1;
+			background-color: $lightpink;
 			color: white;
 		}
 	}
 	a.active {
-		background-color: #F8BBD0;
+		background-color: $lowpink;
 		color: white;
 	}
 }
@@ -65,8 +77,8 @@ body {
 	-ms-flex: 40%;
 	-webkit-box-flex: 40%;
 	flex: 40%;
-	background-color: #FFFFFF;
-	color: #CE1A70;
+	background-color: $white;
+	color: $strongpink;
 	padding: 20px;
 }
 .main {
@@ -87,6 +99,9 @@ body {
 	width: 60%;
 	margin: 0 auto;
 }
+.link{
+	@extend %linea;
+}
 #mytable {
 	margin: 70px 60px 60px -50px;
 	font-family: Arial, Helvetica, Sans-Serif;
@@ -94,12 +109,12 @@ body {
 	width: 100%;
 	tr {
 		border-collapse: collapse;
-		border: 1px solid #8F094A;
+		border: 1px solid $darkpink;
 		text-align: center;
 		font-size: 18px;
-		color: #8F094A;
+		color: $darkpink;
 		padding: 10px;
-		background-color: #F8BBD0;
+		background-color:  $lowpink;
 		&:nth-child(even) {
 			background-color: white;
 		}
@@ -109,24 +124,24 @@ body {
 	}
 	th {
 		padding-top: 12px;
-		border: 1px solid #8F094A;
+		border: 1px solid $darkpink;
 		padding-bottom: 12px;
 		text-align: center;
-		background-color: #C2185B;
+		background-color: $lowpink;
 		color: white;
 	}
 }
 td {
 	border-collapse: collapse;
-	border: 1px solid #8F094A;
+	border: 1px solid $darkpink;
 	text-align: center;
 	font-size: 18px;
-	color: #8F094A;
+	color: $darkpink;
 	padding: 10px;
-	background-color: #F8BBD0;
+	background-color:  $lowpink;
 }
 .box {
-	background-color: #FFB6C1;
+	background-color: $lightpink;
 	font-family: arial, helvetica, sans-serif;
 	font-size: 18px;
 	color: #8F094A;
@@ -139,7 +154,7 @@ td {
 	text-align: center;
 	background-color: pink;
 	border-style: solid;
-	border-color: #CE1A70;
+	border-color: $strongpink;
 }
 @media screen and (max-width: 700px) {
 	.row {
