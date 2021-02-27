@@ -8,6 +8,11 @@ body {
   margin: 0;
 }
 
+a > .link
+{
+  text-decoration: none;
+}
+
 .header {
   padding: 50px;
   text-align: center;
@@ -93,6 +98,13 @@ body {
 .wrapper {
   width: 60%;
   margin: 0 auto;
+}
+.link{
+  color: #C2185B;
+}
+
+a.link:hover{
+  color: #FDFEFE;
 }
 
 #mytable {
